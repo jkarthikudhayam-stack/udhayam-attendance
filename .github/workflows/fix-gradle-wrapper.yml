@@ -17,10 +17,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Install Gradle 9.3.1
+      - name: Install Gradle 9.3.1 (skip validation of corrupt jar)
         uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '9.3.1'
+          validate-wrappers: false
 
       - name: Regenerate official wrapper jar + scripts
         run: gradle wrapper
