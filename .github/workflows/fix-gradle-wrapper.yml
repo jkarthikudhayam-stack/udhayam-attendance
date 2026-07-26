@@ -20,7 +20,7 @@ jobs:
       - name: Install Gradle matching your project's declared version
         uses: gradle/actions/setup-gradle@v6
         with:
-          gradle-version: wrapper
+  gradle-version: '9.3.1'
 
       - name: Regenerate official wrapper jar + scripts
         run: gradle wrapper
