@@ -1,0 +1,6 @@
+{
+  "name": "Udhayam Attendance",
+  "description": "Role-based attendance management system with staff, manager, and owner dashboards, punch logs, and leave tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
