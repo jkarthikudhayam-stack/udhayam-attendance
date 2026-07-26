@@ -17,10 +17,10 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Install Gradle matching your project's declared version
+      - name: Install Gradle 9.3.1
         uses: gradle/actions/setup-gradle@v6
         with:
-  gradle-version: '9.3.1'
+          gradle-version: '9.3.1'
 
       - name: Regenerate official wrapper jar + scripts
         run: gradle wrapper
